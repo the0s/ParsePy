@@ -1,0 +1,1096 @@
+[28/Oct/2018 10:09:10] DEBUG [django.db.backends:111] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Oct/2018 10:09:10] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Oct/2018 10:09:18] DEBUG [django.db.backends:111] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:09:18.522055'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:09:18.522055')
+[28/Oct/2018 10:09:20] DEBUG [django.template:878] Exception while resolving variable 'discStatId' in template 'map_discoverlist_page.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+KeyError: 'discStatId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'discStatId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'discStatId'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [discStatId] in {'objectId': None, 'id': 'CDXARgr8oZ', 'name': 'aerg', 'caption': 'aerg', 'show': True, 'premium': False, 'follows': 0, 'img': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/ca0a0b764f9ead2c26c02475091a6f6b_filename.jpeg', 'userFollow': False, '_created_at': <parse_rest.datatypes.Date object at 0x11327e320>, 'tags': [''], 'isUser': True, 'username': 'theo', 'userId': 'gMbdUgpqf2', 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'location': '', 'url': '', 'order': 1000, 'ranked': False, 'places': [{'objectId': None, 'id': 'oTBUPXGvRQ', 'name': 'Andina', 'nomeUrl': 'http://dev.heynome.com/place/oTBUPXGvRQ', 'nomeUrlShort': 'dev.heynome.com/place/oTBUPXGvRQ', 'geoPoint': {'latitude': 51.524365307832, 'longitude': -0.0769820809364319}, 'category': 'Peruvian', 'address1': '1 Redchurch Street', 'address2': 'London', 'address3': 'United Kingdom', 'userTags': [], 'price': '$$', 'openingTimes': [], 'contact': '+442079206499', 'website': 'http://andinalondon.com', 'images': ['https://s3-media2.fl.yelpcdn.com/bphoto/7pM6iJi3LxqgKnrQECoFig/o.jpg', 'https://b.zmtcdn.com/data/res_imagery/6119776_RESTAURANT_4e3f7626e7c78201e2a8a9c9ea9e49d4.jpg'], 'imagesCaption': ['Yelp', 'Zomato'], 'ratings': [{'name': 'Yelp', 'rating': 4.0, 'of': 5, 'raters': 131, 'url': 'https://www.yelp.com/biz/andina-london?adjust_creative=HFlLEFmkSB182SzdxSqbwg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HFlLEFmkSB182SzdxSqbwg', 'image': '/static/images/imageYelp.jpg'}, {'name': 'Zomato', 'rating': '4.4', 'of': 5, 'raters': '139', 'url': 'https://www.zomato.com/london/andina-shoreditch?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1', 'image': '/static/images/imageZomato.jpg'}], 'savedPlaceId': None, 'userState': -1, 'icon': 'iconMapNotBeen.png', 'statusImg': 'images/iconSave.png', 'dateUp': '28/10/2018'}]}
+[28/Oct/2018 10:09:20] DEBUG [django.template:878] Exception while resolving variable 'createdAt' in template 'map_discoverlist_page.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+KeyError: 'createdAt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'createdAt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'createdAt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [createdAt] in {'objectId': None, 'id': 'CDXARgr8oZ', 'name': 'aerg', 'caption': 'aerg', 'show': True, 'premium': False, 'follows': 0, 'img': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/ca0a0b764f9ead2c26c02475091a6f6b_filename.jpeg', 'userFollow': False, '_created_at': <parse_rest.datatypes.Date object at 0x11327e320>, 'tags': [''], 'isUser': True, 'username': 'theo', 'userId': 'gMbdUgpqf2', 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'location': '', 'url': '', 'order': 1000, 'ranked': False, 'places': [{'objectId': None, 'id': 'oTBUPXGvRQ', 'name': 'Andina', 'nomeUrl': 'http://dev.heynome.com/place/oTBUPXGvRQ', 'nomeUrlShort': 'dev.heynome.com/place/oTBUPXGvRQ', 'geoPoint': {'latitude': 51.524365307832, 'longitude': -0.0769820809364319}, 'category': 'Peruvian', 'address1': '1 Redchurch Street', 'address2': 'London', 'address3': 'United Kingdom', 'userTags': [], 'price': '$$', 'openingTimes': [], 'contact': '+442079206499', 'website': 'http://andinalondon.com', 'images': ['https://s3-media2.fl.yelpcdn.com/bphoto/7pM6iJi3LxqgKnrQECoFig/o.jpg', 'https://b.zmtcdn.com/data/res_imagery/6119776_RESTAURANT_4e3f7626e7c78201e2a8a9c9ea9e49d4.jpg'], 'imagesCaption': ['Yelp', 'Zomato'], 'ratings': [{'name': 'Yelp', 'rating': 4.0, 'of': 5, 'raters': 131, 'url': 'https://www.yelp.com/biz/andina-london?adjust_creative=HFlLEFmkSB182SzdxSqbwg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HFlLEFmkSB182SzdxSqbwg', 'image': '/static/images/imageYelp.jpg'}, {'name': 'Zomato', 'rating': '4.4', 'of': 5, 'raters': '139', 'url': 'https://www.zomato.com/london/andina-shoreditch?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1', 'image': '/static/images/imageZomato.jpg'}], 'savedPlaceId': None, 'userState': -1, 'icon': 'iconMapNotBeen.png', 'statusImg': 'images/iconSave.png', 'dateUp': '28/10/2018'}]}
+[28/Oct/2018 10:09:20] DEBUG [django.template:878] Exception while resolving variable 'savedPlace' in template 'map_discoverlist_page.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'savedPlace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'savedPlace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'savedPlace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [savedPlace] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'j0qhBl2upThz1VbQbupF3hzZIFhEuS6vV6h79ZweDE0F7Q50B7OlxK04S9Ovxu0b'>, 'request': <WSGIRequest: GET '/discover/CDXARgr8oZ'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x110a2b510>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x113306128>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x113255278>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'listData': {'objectId': None, 'id': 'CDXARgr8oZ', 'name': 'aerg', 'caption': 'aerg', 'show': True, 'premium': False, 'follows': 0, 'img': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/ca0a0b764f9ead2c26c02475091a6f6b_filename.jpeg', 'userFollow': False, '_created_at': <parse_rest.datatypes.Date object at 0x11327e320>, 'tags': [''], 'isUser': True, 'username': 'theo', 'userId': 'gMbdUgpqf2', 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'location': '', 'url': '', 'order': 1000, 'ranked': False, 'places': [{'objectId': None, 'id': 'oTBUPXGvRQ', 'name': 'Andina', 'nomeUrl': 'http://dev.heynome.com/place/oTBUPXGvRQ', 'nomeUrlShort': 'dev.heynome.com/place/oTBUPXGvRQ', 'geoPoint': {'latitude': 51.524365307832, 'longitude': -0.0769820809364319}, 'category': 'Peruvian', 'address1': '1 Redchurch Street', 'address2': 'London', 'address3': 'United Kingdom', 'userTags': [], 'price': '$$', 'openingTimes': [], 'contact': '+442079206499', 'website': 'http://andinalondon.com', 'images': ['https://s3-media2.fl.yelpcdn.com/bphoto/7pM6iJi3LxqgKnrQECoFig/o.jpg', 'https://b.zmtcdn.com/data/res_imagery/6119776_RESTAURANT_4e3f7626e7c78201e2a8a9c9ea9e49d4.jpg'], 'imagesCaption': ['Yelp', 'Zomato'], 'ratings': [{'name': 'Yelp', 'rating': 4.0, 'of': 5, 'raters': 131, 'url': 'https://www.yelp.com/biz/andina-london?adjust_creative=HFlLEFmkSB182SzdxSqbwg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HFlLEFmkSB182SzdxSqbwg', 'image': '/static/images/imageYelp.jpg'}, {'name': 'Zomato', 'rating': '4.4', 'of': 5, 'raters': '139', 'url': 'https://www.zomato.com/london/andina-shoreditch?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1', 'image': '/static/images/imageZomato.jpg'}], 'savedPlaceId': None, 'userState': -1, 'icon': 'iconMapNotBeen.png', 'statusImg': 'images/iconSave.png', 'dateUp': '28/10/2018'}]}, 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x1132fc400>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x1132adf28>, <TextNode: '" class="imageNavNew alig'>, <django.template.loader_tags.IncludeNode object at 0x1132fc6d8>, <TextNode: '                        \n'>, <IfNode>, <TextNode: '\n          </div>        '>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x1132fc550>, <TextNode: '" alt="User Saved Place S'>, <django.templatetags.static.StaticNode object at 0x1132fcef0>, <TextNode: '" class="backImg" alt="">'>, <TextNode: '\n      <div id="map"></di'>]>}, {'listData': {'objectId': None, 'id': 'CDXARgr8oZ', 'name': 'aerg', 'caption': 'aerg', 'show': True, 'premium': False, 'follows': 0, 'img': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/ca0a0b764f9ead2c26c02475091a6f6b_filename.jpeg', 'userFollow': False, '_created_at': <parse_rest.datatypes.Date object at 0x11327e320>, 'tags': [''], 'isUser': True, 'username': 'theo', 'userId': 'gMbdUgpqf2', 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'location': '', 'url': '', 'order': 1000, 'ranked': False, 'places': [{'objectId': None, 'id': 'oTBUPXGvRQ', 'name': 'Andina', 'nomeUrl': 'http://dev.heynome.com/place/oTBUPXGvRQ', 'nomeUrlShort': 'dev.heynome.com/place/oTBUPXGvRQ', 'geoPoint': {'latitude': 51.524365307832, 'longitude': -0.0769820809364319}, 'category': 'Peruvian', 'address1': '1 Redchurch Street', 'address2': 'London', 'address3': 'United Kingdom', 'userTags': [], 'price': '$$', 'openingTimes': [], 'contact': '+442079206499', 'website': 'http://andinalondon.com', 'images': ['https://s3-media2.fl.yelpcdn.com/bphoto/7pM6iJi3LxqgKnrQECoFig/o.jpg', 'https://b.zmtcdn.com/data/res_imagery/6119776_RESTAURANT_4e3f7626e7c78201e2a8a9c9ea9e49d4.jpg'], 'imagesCaption': ['Yelp', 'Zomato'], 'ratings': [{'name': 'Yelp', 'rating': 4.0, 'of': 5, 'raters': 131, 'url': 'https://www.yelp.com/biz/andina-london?adjust_creative=HFlLEFmkSB182SzdxSqbwg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HFlLEFmkSB182SzdxSqbwg', 'image': '/static/images/imageYelp.jpg'}, {'name': 'Zomato', 'rating': '4.4', 'of': 5, 'raters': '139', 'url': 'https://www.zomato.com/london/andina-shoreditch?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1', 'image': '/static/images/imageZomato.jpg'}], 'savedPlaceId': None, 'userState': -1, 'icon': 'iconMapNotBeen.png', 'statusImg': 'images/iconSave.png', 'dateUp': '28/10/2018'}]}, 'user': <User:theo (Id gMbdUgpqf2)>}, {'forloop': {'parentloop': {}, 'counter0': 0, 'counter': 1, 'revcounter': 1, 'revcounter0': 0, 'first': True, 'last': True}, 'p': {'objectId': None, 'id': 'oTBUPXGvRQ', 'name': 'Andina', 'nomeUrl': 'http://dev.heynome.com/place/oTBUPXGvRQ', 'nomeUrlShort': 'dev.heynome.com/place/oTBUPXGvRQ', 'geoPoint': {'latitude': 51.524365307832, 'longitude': -0.0769820809364319}, 'category': 'Peruvian', 'address1': '1 Redchurch Street', 'address2': 'London', 'address3': 'United Kingdom', 'userTags': [], 'price': '$$', 'openingTimes': [], 'contact': '+442079206499', 'website': 'http://andinalondon.com', 'images': ['https://s3-media2.fl.yelpcdn.com/bphoto/7pM6iJi3LxqgKnrQECoFig/o.jpg', 'https://b.zmtcdn.com/data/res_imagery/6119776_RESTAURANT_4e3f7626e7c78201e2a8a9c9ea9e49d4.jpg'], 'imagesCaption': ['Yelp', 'Zomato'], 'ratings': [{'name': 'Yelp', 'rating': 4.0, 'of': 5, 'raters': 131, 'url': 'https://www.yelp.com/biz/andina-london?adjust_creative=HFlLEFmkSB182SzdxSqbwg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HFlLEFmkSB182SzdxSqbwg', 'image': '/static/images/imageYelp.jpg'}, {'name': 'Zomato', 'rating': '4.4', 'of': 5, 'raters': '139', 'url': 'https://www.zomato.com/london/andina-shoreditch?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1', 'image': '/static/images/imageZomato.jpg'}], 'savedPlaceId': None, 'userState': -1, 'icon': 'iconMapNotBeen.png', 'statusImg': 'images/iconSave.png', 'dateUp': '28/10/2018'}}, {}]
+[28/Oct/2018 10:09:20] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'map_discoverlist_page.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'j0qhBl2upThz1VbQbupF3hzZIFhEuS6vV6h79ZweDE0F7Q50B7OlxK04S9Ovxu0b'>, 'request': <WSGIRequest: GET '/discover/CDXARgr8oZ'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x110a2b510>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x113306128>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x113255278>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'listData': {'objectId': None, 'id': 'CDXARgr8oZ', 'name': 'aerg', 'caption': 'aerg', 'show': True, 'premium': False, 'follows': 0, 'img': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/ca0a0b764f9ead2c26c02475091a6f6b_filename.jpeg', 'userFollow': False, '_created_at': <parse_rest.datatypes.Date object at 0x11327e320>, 'tags': [''], 'isUser': True, 'username': 'theo', 'userId': 'gMbdUgpqf2', 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'location': '', 'url': '', 'order': 1000, 'ranked': False, 'places': [{'objectId': None, 'id': 'oTBUPXGvRQ', 'name': 'Andina', 'nomeUrl': 'http://dev.heynome.com/place/oTBUPXGvRQ', 'nomeUrlShort': 'dev.heynome.com/place/oTBUPXGvRQ', 'geoPoint': {'latitude': 51.524365307832, 'longitude': -0.0769820809364319}, 'category': 'Peruvian', 'address1': '1 Redchurch Street', 'address2': 'London', 'address3': 'United Kingdom', 'userTags': [], 'price': '$$', 'openingTimes': [], 'contact': '+442079206499', 'website': 'http://andinalondon.com', 'images': ['https://s3-media2.fl.yelpcdn.com/bphoto/7pM6iJi3LxqgKnrQECoFig/o.jpg', 'https://b.zmtcdn.com/data/res_imagery/6119776_RESTAURANT_4e3f7626e7c78201e2a8a9c9ea9e49d4.jpg'], 'imagesCaption': ['Yelp', 'Zomato'], 'ratings': [{'name': 'Yelp', 'rating': 4.0, 'of': 5, 'raters': 131, 'url': 'https://www.yelp.com/biz/andina-london?adjust_creative=HFlLEFmkSB182SzdxSqbwg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HFlLEFmkSB182SzdxSqbwg', 'image': '/static/images/imageYelp.jpg'}, {'name': 'Zomato', 'rating': '4.4', 'of': 5, 'raters': '139', 'url': 'https://www.zomato.com/london/andina-shoreditch?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1', 'image': '/static/images/imageZomato.jpg'}], 'savedPlaceId': None, 'userState': -1, 'icon': 'iconMapNotBeen.png', 'statusImg': 'images/iconSave.png', 'dateUp': '28/10/2018'}]}, 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x1132fc400>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x1132adf28>, <TextNode: '" class="imageNavNew alig'>, <django.template.loader_tags.IncludeNode object at 0x1132fc6d8>, <TextNode: '                        \n'>, <IfNode>, <TextNode: '\n          </div>        '>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x1132fc550>, <TextNode: '" alt="User Saved Place S'>, <django.templatetags.static.StaticNode object at 0x1132fcef0>, <TextNode: '" class="backImg" alt="">'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:09:20] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'map_discoverlist_page.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'j0qhBl2upThz1VbQbupF3hzZIFhEuS6vV6h79ZweDE0F7Q50B7OlxK04S9Ovxu0b'>, 'request': <WSGIRequest: GET '/discover/CDXARgr8oZ'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x110a2b510>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x113306128>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x113255278>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'listData': {'objectId': None, 'id': 'CDXARgr8oZ', 'name': 'aerg', 'caption': 'aerg', 'show': True, 'premium': False, 'follows': 0, 'img': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/ca0a0b764f9ead2c26c02475091a6f6b_filename.jpeg', 'userFollow': False, '_created_at': <parse_rest.datatypes.Date object at 0x11327e320>, 'tags': [''], 'isUser': True, 'username': 'theo', 'userId': 'gMbdUgpqf2', 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'location': '', 'url': '', 'order': 1000, 'ranked': False, 'places': [{'objectId': None, 'id': 'oTBUPXGvRQ', 'name': 'Andina', 'nomeUrl': 'http://dev.heynome.com/place/oTBUPXGvRQ', 'nomeUrlShort': 'dev.heynome.com/place/oTBUPXGvRQ', 'geoPoint': {'latitude': 51.524365307832, 'longitude': -0.0769820809364319}, 'category': 'Peruvian', 'address1': '1 Redchurch Street', 'address2': 'London', 'address3': 'United Kingdom', 'userTags': [], 'price': '$$', 'openingTimes': [], 'contact': '+442079206499', 'website': 'http://andinalondon.com', 'images': ['https://s3-media2.fl.yelpcdn.com/bphoto/7pM6iJi3LxqgKnrQECoFig/o.jpg', 'https://b.zmtcdn.com/data/res_imagery/6119776_RESTAURANT_4e3f7626e7c78201e2a8a9c9ea9e49d4.jpg'], 'imagesCaption': ['Yelp', 'Zomato'], 'ratings': [{'name': 'Yelp', 'rating': 4.0, 'of': 5, 'raters': 131, 'url': 'https://www.yelp.com/biz/andina-london?adjust_creative=HFlLEFmkSB182SzdxSqbwg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HFlLEFmkSB182SzdxSqbwg', 'image': '/static/images/imageYelp.jpg'}, {'name': 'Zomato', 'rating': '4.4', 'of': 5, 'raters': '139', 'url': 'https://www.zomato.com/london/andina-shoreditch?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1', 'image': '/static/images/imageZomato.jpg'}], 'savedPlaceId': None, 'userState': -1, 'icon': 'iconMapNotBeen.png', 'statusImg': 'images/iconSave.png', 'dateUp': '28/10/2018'}]}, 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x1132fc400>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x1132adf28>, <TextNode: '" class="imageNavNew alig'>, <django.template.loader_tags.IncludeNode object at 0x1132fc6d8>, <TextNode: '                        \n'>, <IfNode>, <TextNode: '\n          </div>        '>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x1132fc550>, <TextNode: '" alt="User Saved Place S'>, <django.templatetags.static.StaticNode object at 0x1132fcef0>, <TextNode: '" class="backImg" alt="">'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:09:20] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'map_discoverlist_page.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'j0qhBl2upThz1VbQbupF3hzZIFhEuS6vV6h79ZweDE0F7Q50B7OlxK04S9Ovxu0b'>, 'request': <WSGIRequest: GET '/discover/CDXARgr8oZ'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x110a2b510>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x113306128>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x113255278>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'listData': {'objectId': None, 'id': 'CDXARgr8oZ', 'name': 'aerg', 'caption': 'aerg', 'show': True, 'premium': False, 'follows': 0, 'img': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/ca0a0b764f9ead2c26c02475091a6f6b_filename.jpeg', 'userFollow': False, '_created_at': <parse_rest.datatypes.Date object at 0x11327e320>, 'tags': [''], 'isUser': True, 'username': 'theo', 'userId': 'gMbdUgpqf2', 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'location': '', 'url': '', 'order': 1000, 'ranked': False, 'places': [{'objectId': None, 'id': 'oTBUPXGvRQ', 'name': 'Andina', 'nomeUrl': 'http://dev.heynome.com/place/oTBUPXGvRQ', 'nomeUrlShort': 'dev.heynome.com/place/oTBUPXGvRQ', 'geoPoint': {'latitude': 51.524365307832, 'longitude': -0.0769820809364319}, 'category': 'Peruvian', 'address1': '1 Redchurch Street', 'address2': 'London', 'address3': 'United Kingdom', 'userTags': [], 'price': '$$', 'openingTimes': [], 'contact': '+442079206499', 'website': 'http://andinalondon.com', 'images': ['https://s3-media2.fl.yelpcdn.com/bphoto/7pM6iJi3LxqgKnrQECoFig/o.jpg', 'https://b.zmtcdn.com/data/res_imagery/6119776_RESTAURANT_4e3f7626e7c78201e2a8a9c9ea9e49d4.jpg'], 'imagesCaption': ['Yelp', 'Zomato'], 'ratings': [{'name': 'Yelp', 'rating': 4.0, 'of': 5, 'raters': 131, 'url': 'https://www.yelp.com/biz/andina-london?adjust_creative=HFlLEFmkSB182SzdxSqbwg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HFlLEFmkSB182SzdxSqbwg', 'image': '/static/images/imageYelp.jpg'}, {'name': 'Zomato', 'rating': '4.4', 'of': 5, 'raters': '139', 'url': 'https://www.zomato.com/london/andina-shoreditch?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1', 'image': '/static/images/imageZomato.jpg'}], 'savedPlaceId': None, 'userState': -1, 'icon': 'iconMapNotBeen.png', 'statusImg': 'images/iconSave.png', 'dateUp': '28/10/2018'}]}, 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x1132fc400>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x1132adf28>, <TextNode: '" class="imageNavNew alig'>, <django.template.loader_tags.IncludeNode object at 0x1132fc6d8>, <TextNode: '                        \n'>, <IfNode>, <TextNode: '\n          </div>        '>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x1132fc550>, <TextNode: '" alt="User Saved Place S'>, <django.templatetags.static.StaticNode object at 0x1132fcef0>, <TextNode: '" class="backImg" alt="">'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:09:20] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'map_discoverlist_page.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'j0qhBl2upThz1VbQbupF3hzZIFhEuS6vV6h79ZweDE0F7Q50B7OlxK04S9Ovxu0b'>, 'request': <WSGIRequest: GET '/discover/CDXARgr8oZ'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x110a2b510>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x113306128>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x113255278>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'listData': {'objectId': None, 'id': 'CDXARgr8oZ', 'name': 'aerg', 'caption': 'aerg', 'show': True, 'premium': False, 'follows': 0, 'img': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/ca0a0b764f9ead2c26c02475091a6f6b_filename.jpeg', 'userFollow': False, '_created_at': <parse_rest.datatypes.Date object at 0x11327e320>, 'tags': [''], 'isUser': True, 'username': 'theo', 'userId': 'gMbdUgpqf2', 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'location': '', 'url': '', 'order': 1000, 'ranked': False, 'places': [{'objectId': None, 'id': 'oTBUPXGvRQ', 'name': 'Andina', 'nomeUrl': 'http://dev.heynome.com/place/oTBUPXGvRQ', 'nomeUrlShort': 'dev.heynome.com/place/oTBUPXGvRQ', 'geoPoint': {'latitude': 51.524365307832, 'longitude': -0.0769820809364319}, 'category': 'Peruvian', 'address1': '1 Redchurch Street', 'address2': 'London', 'address3': 'United Kingdom', 'userTags': [], 'price': '$$', 'openingTimes': [], 'contact': '+442079206499', 'website': 'http://andinalondon.com', 'images': ['https://s3-media2.fl.yelpcdn.com/bphoto/7pM6iJi3LxqgKnrQECoFig/o.jpg', 'https://b.zmtcdn.com/data/res_imagery/6119776_RESTAURANT_4e3f7626e7c78201e2a8a9c9ea9e49d4.jpg'], 'imagesCaption': ['Yelp', 'Zomato'], 'ratings': [{'name': 'Yelp', 'rating': 4.0, 'of': 5, 'raters': 131, 'url': 'https://www.yelp.com/biz/andina-london?adjust_creative=HFlLEFmkSB182SzdxSqbwg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=HFlLEFmkSB182SzdxSqbwg', 'image': '/static/images/imageYelp.jpg'}, {'name': 'Zomato', 'rating': '4.4', 'of': 5, 'raters': '139', 'url': 'https://www.zomato.com/london/andina-shoreditch?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1', 'image': '/static/images/imageZomato.jpg'}], 'savedPlaceId': None, 'userState': -1, 'icon': 'iconMapNotBeen.png', 'statusImg': 'images/iconSave.png', 'dateUp': '28/10/2018'}]}, 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x1132fc400>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x1132adf28>, <TextNode: '" class="imageNavNew alig'>, <django.template.loader_tags.IncludeNode object at 0x1132fc6d8>, <TextNode: '                        \n'>, <IfNode>, <TextNode: '\n          </div>        '>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x1132fc550>, <TextNode: '" alt="User Saved Place S'>, <django.templatetags.static.StaticNode object at 0x1132fcef0>, <TextNode: '" class="backImg" alt="">'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:09:20] INFO [django.server:124] "GET /discover/CDXARgr8oZ HTTP/1.1" 200 24340
+[28/Oct/2018 10:09:21] INFO [django.server:124] "GET /static/js/mainpagescripts.js HTTP/1.1" 304 0
+[28/Oct/2018 10:09:22] DEBUG [django.db.backends:111] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:09:22.465319'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:09:22.465319')
+[28/Oct/2018 10:10:52] DEBUG [django.db.backends:111] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Oct/2018 10:10:52] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Oct/2018 10:10:53] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:10:53.968581'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:10:53.968581')
+[28/Oct/2018 10:10:54] DEBUG [django.db.backends:111] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:10:54.103458'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:10:54.103458')
+[28/Oct/2018 10:10:54] DEBUG [django.db.backends:111] (0.000) BEGIN; args=None
+[28/Oct/2018 10:10:54] DEBUG [django.db.backends:111] (0.000) UPDATE "django_session" SET "session_data" = 'NjE4ODQxNjNhNjFmZjY1OTQ1NWE5YWEzZmMzMmUwNTJjMzg3YWZkMDp7IlBhcnNlU2Vzc2lvbiI6bnVsbH0=', "expire_date" = '2018-11-11 10:10:54.427475' WHERE "django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g'; args=('NjE4ODQxNjNhNjFmZjY1OTQ1NWE5YWEzZmMzMmUwNTJjMzg3YWZkMDp7IlBhcnNlU2Vzc2lvbiI6bnVsbH0=', '2018-11-11 10:10:54.427475', '6goxc813zr9d9b81c26ydsfvedzder5g')
+[28/Oct/2018 10:10:54] INFO [django.server:124] "GET /discover/create HTTP/1.1" 302 0
+[28/Oct/2018 10:10:54] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:10:54.437461'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:10:54.437461')
+[28/Oct/2018 10:10:54] INFO [django.server:124] "GET /login HTTP/1.1" 200 11930
+[28/Oct/2018 10:10:54] INFO [django.server:124] "GET /discover/create HTTP/1.1" 200 14877
+[28/Oct/2018 10:10:55] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:10:55.254658'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:10:55.254658')
+[28/Oct/2018 10:10:55] INFO [django.server:124] "GET /favicon.ico/ HTTP/1.1" 302 0
+[28/Oct/2018 10:10:55] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:10:55.317359'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:10:55.317359')
+[28/Oct/2018 10:10:55] INFO [django.server:124] "GET /login HTTP/1.1" 200 11930
+[28/Oct/2018 10:10:58] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:10:58.332582'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:10:58.332582')
+[28/Oct/2018 10:10:59] DEBUG [django.db.backends:111] (0.000) BEGIN; args=None
+[28/Oct/2018 10:10:59] DEBUG [django.db.backends:111] (0.000) UPDATE "django_session" SET "session_data" = 'MWZiN2JkNWQ0MmY4NzYzYzhkYTY1ZTQzMGFjNGRiYWFiYzNmNWNkMDp7IlBhcnNlU2Vzc2lvbiI6InI6MTc1M2UxNTNkOTAxY2RlMWU1ZmRiYTA2ZDJhZDk4YzYifQ==', "expire_date" = '2018-11-11 10:10:59.145027' WHERE "django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g'; args=('MWZiN2JkNWQ0MmY4NzYzYzhkYTY1ZTQzMGFjNGRiYWFiYzNmNWNkMDp7IlBhcnNlU2Vzc2lvbiI6InI6MTc1M2UxNTNkOTAxY2RlMWU1ZmRiYTA2ZDJhZDk4YzYifQ==', '2018-11-11 10:10:59.145027', '6goxc813zr9d9b81c26ydsfvedzder5g')
+[28/Oct/2018 10:10:59] INFO [django.server:124] "POST /login HTTP/1.1" 302 0
+[28/Oct/2018 10:10:59] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:10:59.154790'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:10:59.154790')
+[28/Oct/2018 10:10:59] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'wHPRIuKy7wG1rxzmhyAutVfUzuV7zQRf8NGHg8eilhp7xstwHbZaXoGZJYsYCsLV'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1069f4268>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106ae0780>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x106ad1588>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106af2668>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106ae06a0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106af2780>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:10:59] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'wHPRIuKy7wG1rxzmhyAutVfUzuV7zQRf8NGHg8eilhp7xstwHbZaXoGZJYsYCsLV'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1069f4268>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106ae0780>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x106ad1588>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106af2668>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106ae06a0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106af2780>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:10:59] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'wHPRIuKy7wG1rxzmhyAutVfUzuV7zQRf8NGHg8eilhp7xstwHbZaXoGZJYsYCsLV'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1069f4268>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106ae0780>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x106ad1588>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106af2668>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106ae06a0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106af2780>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:10:59] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'wHPRIuKy7wG1rxzmhyAutVfUzuV7zQRf8NGHg8eilhp7xstwHbZaXoGZJYsYCsLV'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1069f4268>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106ae0780>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x106ad1588>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106af2668>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106ae06a0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106af2780>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:10:59] INFO [django.server:124] "GET /me HTTP/1.1" 200 18314
+[28/Oct/2018 10:11:00] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:11:00.646400'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:11:00.646400')
+[28/Oct/2018 10:11:01] INFO [django.server:124] "GET /favicon.ico/ HTTP/1.1" 302 0
+[28/Oct/2018 10:11:01] DEBUG [django.db.backends:111] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:11:01.043343'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:11:01.043343')
+[28/Oct/2018 10:11:01] INFO [django.server:124] "POST /ajax/get_user_saved_places HTTP/1.1" 200 316390
+[28/Oct/2018 10:11:01] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'R5iLe5W2vuHL8ohToqypUoCwECHy2CcItb9BMJqMJfqRejb3O3X5oR3BO6ep5e6o'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1d1e0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106b78ba8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107c05780>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106b2fc88>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106b2f2b0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106b2fb38>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:01] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'R5iLe5W2vuHL8ohToqypUoCwECHy2CcItb9BMJqMJfqRejb3O3X5oR3BO6ep5e6o'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1d1e0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106b78ba8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107c05780>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106b2fc88>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106b2f2b0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106b2fb38>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:01] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'R5iLe5W2vuHL8ohToqypUoCwECHy2CcItb9BMJqMJfqRejb3O3X5oR3BO6ep5e6o'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1d1e0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106b78ba8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107c05780>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106b2fc88>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106b2f2b0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106b2fb38>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:01] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'R5iLe5W2vuHL8ohToqypUoCwECHy2CcItb9BMJqMJfqRejb3O3X5oR3BO6ep5e6o'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1d1e0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106b78ba8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107c05780>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106b2fc88>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106b2f2b0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106b2fb38>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:01] INFO [django.server:124] "GET /me HTTP/1.1" 200 18314
+[28/Oct/2018 10:11:02] INFO [django.server:124] "POST /ajax/get_user_saved_places HTTP/1.1" 200 315745
+[28/Oct/2018 10:11:02] INFO [django.server:124] "POST /ajax/get_user_saved_places HTTP/1.1" 200 3175
+[28/Oct/2018 10:11:03] DEBUG [django.template:878] Exception while resolving variable 'savedPlace' in template 'savedPlaceRow.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'savedPlace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'savedPlace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'savedPlace'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [savedPlace] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x106b1d488>>, 'request': <WSGIRequest: POST '/ajax/get_user_saved_places'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1d378>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106ad7748>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x105fd77f0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'savedPlaces': []}]
+[28/Oct/2018 10:11:03] INFO [django.server:124] "POST /ajax/get_user_saved_places HTTP/1.1" 200 354
+[28/Oct/2018 10:11:05] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:11:05.734546'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:11:05.734546')
+[28/Oct/2018 10:11:06] INFO [django.server:124] "GET /discover/create HTTP/1.1" 200 14877
+[28/Oct/2018 10:11:06] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:11:06.712252'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:11:06.712252')
+[28/Oct/2018 10:11:07] INFO [django.server:124] "GET /favicon.ico/ HTTP/1.1" 302 0
+[28/Oct/2018 10:11:07] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:11:07.045584'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:11:07.045584')
+[28/Oct/2018 10:11:07] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'sgogibbEPMyoM2i0mfpPZCennFY266UC4mf6QPFo3xhuSXcaMSOvt5Fsx9vT9IOi'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1d0d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107c0cb70>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x106b80b70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106ad75c0>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x107c0cfd0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106ad76d8>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:07] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'sgogibbEPMyoM2i0mfpPZCennFY266UC4mf6QPFo3xhuSXcaMSOvt5Fsx9vT9IOi'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1d0d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107c0cb70>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x106b80b70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106ad75c0>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x107c0cfd0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106ad76d8>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:07] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'sgogibbEPMyoM2i0mfpPZCennFY266UC4mf6QPFo3xhuSXcaMSOvt5Fsx9vT9IOi'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1d0d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107c0cb70>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x106b80b70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106ad75c0>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x107c0cfd0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106ad76d8>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:07] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'sgogibbEPMyoM2i0mfpPZCennFY266UC4mf6QPFo3xhuSXcaMSOvt5Fsx9vT9IOi'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1d0d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x107c0cb70>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x106b80b70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x106ad75c0>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x107c0cfd0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x106ad76d8>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:07] INFO [django.server:124] "GET /me HTTP/1.1" 200 18314
+[28/Oct/2018 10:11:25] DEBUG [django.db.backends:111] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:11:25.577391'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:11:25.577391')
+[28/Oct/2018 10:11:26] INFO [django.server:124] "POST /discover/create HTTP/1.1" 302 0
+[28/Oct/2018 10:11:26] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:11:26.415842'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:11:26.415842')
+[28/Oct/2018 10:11:27] INFO [django.server:124] "GET /discover/create/0voX6Icrta HTTP/1.1" 200 17167
+[28/Oct/2018 10:11:28] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:11:28.758778'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:11:28.758778')
+[28/Oct/2018 10:11:29] INFO [django.server:124] "GET /favicon.ico/ HTTP/1.1" 302 0
+[28/Oct/2018 10:11:29] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:11:29.536292'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:11:29.536292')
+[28/Oct/2018 10:11:31] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'UxHoW89flEGFuVDkAf0vKImfG3G7Skn5wDyeuMDZzppLAQxu0SpbebNkQxdYVWhL'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1dbf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106b95e10>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107c057b8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x105fd7b70>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106b95828>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x105fd7978>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:31] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'UxHoW89flEGFuVDkAf0vKImfG3G7Skn5wDyeuMDZzppLAQxu0SpbebNkQxdYVWhL'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1dbf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106b95e10>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107c057b8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x105fd7b70>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106b95828>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x105fd7978>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:31] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'UxHoW89flEGFuVDkAf0vKImfG3G7Skn5wDyeuMDZzppLAQxu0SpbebNkQxdYVWhL'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1dbf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106b95e10>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107c057b8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x105fd7b70>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106b95828>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x105fd7978>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:31] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'UxHoW89flEGFuVDkAf0vKImfG3G7Skn5wDyeuMDZzppLAQxu0SpbebNkQxdYVWhL'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x106b1dbf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x106b95e10>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x107c057b8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x105fd7b70>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x106b95828>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x105fd7978>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:11:31] INFO [django.server:124] "GET /me HTTP/1.1" 200 18314
+[28/Oct/2018 10:12:00] DEBUG [django.db.backends:111] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Oct/2018 10:12:00] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Oct/2018 10:12:03] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:03.687702'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:03.687702')
+[28/Oct/2018 10:12:04] INFO [django.server:124] "GET /discover/create HTTP/1.1" 200 14877
+[28/Oct/2018 10:12:04] INFO [django.server:124] "GET /static/js/mainpagescripts.js HTTP/1.1" 304 0
+[28/Oct/2018 10:12:05] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:05.081740'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:05.081740')
+[28/Oct/2018 10:12:05] INFO [django.server:124] "GET /favicon.ico/ HTTP/1.1" 302 0
+[28/Oct/2018 10:12:05] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:05.417214'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:05.417214')
+[28/Oct/2018 10:12:06] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'IUMZv2ARIpn8jiAqOyR2O3RiWAzmiculk0DP3G4BWa6epduAebgIiwin646dlOo1'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x10c408510>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10d608390>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10c590fd0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x10d608828>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x10d608c18>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x10d608908>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:12:06] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'IUMZv2ARIpn8jiAqOyR2O3RiWAzmiculk0DP3G4BWa6epduAebgIiwin646dlOo1'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x10c408510>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10d608390>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10c590fd0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x10d608828>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x10d608c18>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x10d608908>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:12:06] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'IUMZv2ARIpn8jiAqOyR2O3RiWAzmiculk0DP3G4BWa6epduAebgIiwin646dlOo1'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x10c408510>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10d608390>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10c590fd0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x10d608828>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x10d608c18>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x10d608908>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:12:06] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'IUMZv2ARIpn8jiAqOyR2O3RiWAzmiculk0DP3G4BWa6epduAebgIiwin646dlOo1'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x10c408510>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10d608390>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10c590fd0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x10d608828>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x10d608c18>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x10d608908>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:12:06] INFO [django.server:124] "GET /me HTTP/1.1" 200 18314
+[28/Oct/2018 10:12:17] DEBUG [django.db.backends:111] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:17.028775'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:17.028775')
+[28/Oct/2018 10:12:17] INFO [django.server:124] "POST /discover/create HTTP/1.1" 302 0
+[28/Oct/2018 10:12:17] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:17.851218'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:17.851218')
+[28/Oct/2018 10:12:19] INFO [django.server:124] "GET /discover/create/i50jyU6i3o HTTP/1.1" 200 17167
+[28/Oct/2018 10:12:20] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:20.034593'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:20.034593')
+[28/Oct/2018 10:12:20] INFO [django.server:124] "GET /favicon.ico/ HTTP/1.1" 302 0
+[28/Oct/2018 10:12:20] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:20.425336'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:20.425336')
+[28/Oct/2018 10:12:29] DEBUG [django.db.backends:111] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[28/Oct/2018 10:12:29] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[28/Oct/2018 10:12:44] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:44.696284'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:44.696284')
+[28/Oct/2018 10:12:45] INFO [django.server:124] "GET /discover/create HTTP/1.1" 200 14877
+[28/Oct/2018 10:12:46] DEBUG [django.db.backends:111] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:46.048702'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:46.048702')
+[28/Oct/2018 10:12:46] INFO [django.server:124] "GET /favicon.ico/ HTTP/1.1" 302 0
+[28/Oct/2018 10:12:46] DEBUG [django.db.backends:111] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:46.371397'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:46.371397')
+[28/Oct/2018 10:12:46] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'VGDIYCtrizbCKQqvaKz4koJElV4XTHNKxMuywgXbwkUIQLkFAnYKORaJvpBOWjHq'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1111b89d8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111284dd8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11121b940>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x1112847b8>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x1112841d0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x111284828>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:12:46] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'VGDIYCtrizbCKQqvaKz4koJElV4XTHNKxMuywgXbwkUIQLkFAnYKORaJvpBOWjHq'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1111b89d8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111284dd8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11121b940>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x1112847b8>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x1112841d0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x111284828>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:12:46] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'VGDIYCtrizbCKQqvaKz4koJElV4XTHNKxMuywgXbwkUIQLkFAnYKORaJvpBOWjHq'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1111b89d8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111284dd8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11121b940>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x1112847b8>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x1112841d0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x111284828>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:12:46] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'VGDIYCtrizbCKQqvaKz4koJElV4XTHNKxMuywgXbwkUIQLkFAnYKORaJvpBOWjHq'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1111b89d8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111284dd8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11121b940>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x1112847b8>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x1112841d0>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x111284828>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:12:46] INFO [django.server:124] "GET /me HTTP/1.1" 200 18314
+[28/Oct/2018 10:12:59] DEBUG [django.db.backends:111] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:12:59.106224'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:12:59.106224')
+[28/Oct/2018 10:13:00] INFO [django.server:124] "POST /discover/create HTTP/1.1" 302 0
+[28/Oct/2018 10:13:00] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:13:00.946523'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:13:00.946523')
+[28/Oct/2018 10:13:02] INFO [django.server:124] "GET /discover/create/P90GbF5bXr HTTP/1.1" 200 17167
+[28/Oct/2018 10:13:03] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:13:03.066489'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:13:03.066489')
+[28/Oct/2018 10:13:03] INFO [django.server:124] "GET /favicon.ico/ HTTP/1.1" 302 0
+[28/Oct/2018 10:13:03] DEBUG [django.db.backends:111] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '6goxc813zr9d9b81c26ydsfvedzder5g' AND "django_session"."expire_date" > '2018-10-28 10:13:03.392271'); args=('6goxc813zr9d9b81c26ydsfvedzder5g', '2018-10-28 10:13:03.392271')
+[28/Oct/2018 10:13:03] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'CUvPySE7mbTtHMPrWIVBEoH3CRMxBCjKe0mF6w8RAWCzNHJBmlkh8R88MljoEedq'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1112950d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111296a20>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11122b320>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x11121b6d8>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x111223860>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x11121b390>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:13:03] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'CUvPySE7mbTtHMPrWIVBEoH3CRMxBCjKe0mF6w8RAWCzNHJBmlkh8R88MljoEedq'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1112950d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111296a20>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11122b320>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x11121b6d8>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x111223860>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x11121b390>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:13:03] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'CUvPySE7mbTtHMPrWIVBEoH3CRMxBCjKe0mF6w8RAWCzNHJBmlkh8R88MljoEedq'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1112950d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111296a20>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11122b320>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x11121b6d8>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x111223860>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x11121b390>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:13:03] DEBUG [django.template:878] Exception while resolving variable 'place' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'place'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/The0s/Desktop/nome/nomeWebNew/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [place] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'CUvPySE7mbTtHMPrWIVBEoH3CRMxBCjKe0mF6w8RAWCzNHJBmlkh8R88MljoEedq'>, 'request': <WSGIRequest: GET '/me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1112950d0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111296a20>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11122b320>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'myList': True, 'userPic': 'https://nome-dev-1211.nodechef.com/parse/files/ed3dab16c4fc2d1144352231b198e9e0/01266c2597ecabc6befdd6aa407ddeeb_xxxxpicture270.jpg', 'user': <User:theo (Id gMbdUgpqf2)>, 'googleKey': 'AIzaSyC5JqJMTwXoDBANNE8-d_X3h5jov1d_G5s', 'mixpanel_token': '8cb27921072271d2e734df3dae2865e5'}, {'block': <Block Node: content. Contents: [<TextNode: '\n<!-- NAVBAR -->\n'>, <django.template.loader_tags.IncludeNode object at 0x11121b6d8>, <TextNode: '\n\n<div class="wrapper">\n '>, <django.templatetags.static.StaticNode object at 0x111223860>, <TextNode: '" class="imageNavNew alig'>, <IfNode>, <TextNode: '">\n                  <a i'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <Variable Node: place.id>, <TextNode: '" data-toggle="popover-'>, <Variable Node: place.id>, <TextNode: '" data-placement="auto" d'>, <django.templatetags.static.StaticNode object at 0x11121b390>, <TextNode: '" alt="User Saved Place S'>, <IfNode>, <TextNode: '\n\n    </nav>\n        <!--'>, <TextNode: '\n      <div id="map"></di'>]>}]
+[28/Oct/2018 10:13:03] INFO [django.server:124] "GET /me HTTP/1.1" 200 18314
